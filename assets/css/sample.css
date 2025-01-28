@@ -1,0 +1,76 @@
+.mostSectionSection {
+    position: relative;
+    top: 160px;
+    height: 750px;
+
+}
+
+.mostSectionCard {
+    width: 300px;
+    height: 420px;
+    margin: auto;
+    
+    border-radius: 5px;
+    background: #ffffff;
+    box-shadow: 26px 26px 52px #aba9a9,
+        -26px -26px 52px #ffffff;
+}
+.mostSectionImage{
+    width:100%;
+    height:300px;
+    margin: 10px auto;
+}
+.mostSectionTitle{
+    color: #122949;
+}
+
+.mostSectionATCBtn {
+    margin: 0 auto;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    padding-block: 0.5rem;
+    padding-inline: 1.25rem;
+    background-color: #122949;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #F0D0A7;
+    gap: 10px;
+    font-weight: bold;
+    border: 3px solid #ffffff4d;
+    outline: none;
+    overflow: hidden;
+    font-size: 15px;
+    width: 60%;
+    height: 40px;
+
+}
+
+.mostSectionATCBtn:hover {
+    transform: scale(1.05);
+    border-color: #fff9;
+}
+
+.mostSectionATCBtn:hover .icon {
+    transform: translate(4px);
+}
+
+.mostSectionATCBtn:hover::before {
+    animation: shine 1.5s ease-out infinite;
+}
+
+.mostSectionATCBtn::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background-image: linear-gradient(120deg,
+            rgba(255, 255, 255, 0) 30%,
+            rgba(255, 255, 255, 0.8),
+            rgba(255, 255, 255, 0) 70%);
+    top: 0;
+    left: -100px;
+    opacity: 0.6;
+}

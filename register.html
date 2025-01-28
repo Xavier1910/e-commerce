@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce|Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="./assets/images/logo.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style>
+        .loginContainer {
+            height: 550px;
+            width: 400px;
+            background-color: #122949;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            padding: 25px;
+            margin: 0 auto;
+            border-radius: 4px;
+        }
+
+        .loginContainer label {
+            color: white;
+            font-size: 20px;
+            width: 100%;
+        }
+
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid #F0D0A7;
+            color: #F0D0A7;
+            outline-color: transparent;
+            outline: none;
+            background-color: #122949;
+            font-size: 18px;
+        }
+
+        .loginBtn {
+            margin: 10px auto;
+            width: 140px;
+            height: 40px;
+            border: none;
+            border-radius: 10px;
+            background: linear-gradient(to right, #77530a, #F0D0A7, #77530a, #77530a, #F0D0A7, #77530a);
+            background-size: 250%;
+            background-position: left;
+            color: #F0D0A7;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition-duration: 1s;
+            overflow: hidden;
+        }
+
+        .loginBtn::before {
+            position: absolute;
+            content: "Register";
+            color: #F0D0A7;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 97%;
+            height: 90%;
+            font-size: 20px;
+            border-radius: 8px;
+            transition-duration: 1s;
+            background-color: #000000;
+            background-size: 200%;
+        }
+
+        .loginBtn:hover {
+            background-position: right;
+            transition-duration: 1s;
+        }
+
+        .loginBtn:hover::before {
+            background-position: right;
+            transition-duration: 1s;
+        }
+
+        .loginBtn:active {
+            transform: scale(0.95);
+        }
+
+        .registerLine {
+            color: white;
+            font-size: 17px;
+        }
+        .registerLine a{
+            text-decoration: none;
+            color: #F0D0A7;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row" style="height: 70px;width: 100%; border-bottom: 5px solid #122949;">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid row">
+                <a class="navbar-brand col-md-3" href="index.html">
+                    <img src="./assets/images/logo.png" alt="Bootstrap" width="50" height="50">
+                    <span class="BrandName">E-Commerce</span>
+                </a>
+            </div>
+        </nav>
+    </div>
+    <div class="row" style="margin-top: 70px;">
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-4">
+            <div class="loginContainer">
+                <h4 class="text-center" style="color: #F0D0A7;font-size: 26px;"><b>User Register</b></h4>
+                <form action="index.html">
+                    <div class="col-lg-12">
+                        <label for="CustomerEmail " class="col-lg-3">Username</label>
+                    </div>
+                    <div class="col-lg-12">
+                        <input type="email" name="Email" placeholder="" id="Customer_name" autocorrect="off"
+                            autocapitalize="off" autofocus="">
+                    </div>
+                    <br>
+                    <div class="col-lg-12">
+                        <label for="CustomerMobile" class="col-lg-3">Mobile Number</label>
+                    </div>
+                    <div class="col-lg-12">
+                        <input type="email" name="Email" placeholder="" id="CustomerMobile" autocorrect="off"
+                            autocapitalize="off" autofocus="">
+                    </div>
+                    <br>
+
+                    <div class="col-lg-12">
+                        <label for="CustomerPassword" class="col-lg-3">Password</label>
+                    </div>
+                    <div class="col-lg-12">
+                        <input type="password" value="" name="Password" placeholder="" id="CustomerPassword">
+                    </div>
+                    <br>
+                    <div class="col-lg-12">
+                        <label for="ConfirmPassword" class="col-lg-3">Confirm Password</label>
+                    </div>
+                    <div class="col-lg-12">
+                        <input type="password" value="" name="Password" placeholder="" id="ConfirmPassword">
+                    </div>
+                    <br><br>
+                    <div class="mb-3">
+                        <button class="loginBtn"></button>
+                    </div>
+                    <div class="mb-3 registerLine text-center">
+                        <span>Already user? <a href="login.html">Log In</a></span>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+</body>
+
+</html>
